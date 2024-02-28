@@ -6,6 +6,15 @@
     <title>Document</title>
     <!--link-->
     <link rel="stylesheet" href="">
+    <!--style-->
+    <style>
+        .class {
+            position: relative;
+            background-color: #fff;
+            width: 10%;
+            height: 10px;
+        }
+    </style>
 </head>
 <body>
     <!--span-->
@@ -26,5 +35,117 @@
     <div class="class"></div>
     <!--#id-->
     <div id="id"></div>
+    <!--button[type=button]-->
+    <button type="button"></button>
+    <!--[data-selected]-->
+    <div data-selected=""></div>
+    <!--[data-selected].active-->
+    <div data-selected="" class="active"></div>
+    <!--div.purple>span.cyan-->
+    <div class="purple"><span class="cyan"></span></div>
+    <!--header>nav>ul-->
+    <header>
+        <nav>
+            <ul></ul>
+        </nav>
+    </header>
+    <!--header>nav>ul>li*3-->
+    <header>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <!--header>nav>ul>li*3{asdfasdf}-->
+    <header>
+        <nav>
+            <ul>
+                <li>asdfasdf</li>
+                <li>asdfasdf</li>
+                <li>asdfasdf</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header>nav>ul>li*3{List Item $}-->
+    <header>
+        <nav>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header>nav>ul>li*3.class-${List Item $}-->
+    <header>
+        <nav>
+            <ul>
+                <li class="class-1">List Item 1</li>
+                <li class="class-2">List Item 2</li>
+                <li class="class-3">List Item 3</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header>nav>ul>li*3.class-${List Item $$}-->
+    <header>
+        <nav>
+            <ul>
+                <li class="class-1">List Item 01</li>
+                <li class="class-2">List Item 02</li>
+                <li class="class-3">List Item 03</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header+main+footer-->
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <!--header>nav+main+footer-->
+    <header>
+        <nav></nav>
+        <main></main>
+        <footer></footer>
+    </header>
+    <!--header>nav^main+footer-->
+    <header>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!--(header>nav)+main+footer-->
+    <header>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!--(header>h2{Heading}+nav>ol>li*5>a{Link $})+main+footer-->
+    <header>
+        <h2>Heading</h2>
+        <nav>
+            <ol>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!--form:post-->
+    <form action="" method="post"></form>
+    <!--form:post>.group>input-->
+    <form action="" method="post">
+        <div class="group"><input type="text"></div>
+    </form>
+    <!--form:post>(.group>label+input:text)+(.group>label+input:number)-->
+    <form action="" method="post">
+        <div class="group"><label for=""></label><input type="text" name="" id=""></div>
+        <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+    </form>
 </body>
 </html>
